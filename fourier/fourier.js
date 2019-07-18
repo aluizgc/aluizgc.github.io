@@ -16,7 +16,7 @@ function dft(x) {
         let freq = k;
         let amp = sqrt(re*re + im*im);
         let fase = atan2(im, re);
-        X[k] = { re, im, freq, amp, fase };
+        X[k] = { re, im, freq, amp, fase }; a
     }
 
 
