@@ -108,6 +108,7 @@ body{
 .bottom-section span{
     font-size: 14px;
     display: block;
+    align-content: center;
 }
 
 .social-media{
