@@ -4,11 +4,10 @@
     font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
     text-decoration: none;
-
 }
 
 body{
-   background: url(bg.jpg) no-repeat center; 
+   background: url(bg.png) no-repeat center; 
    background-size: cover;
    min-height: 100vh;
    display: flex;
