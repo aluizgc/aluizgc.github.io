@@ -71,3 +71,17 @@ textarea.contact-form-text{
 .contact-form-btn:hover{
     background: #2980b9;
 }
+.back-home{
+    float: left;
+    border: 0;
+    background: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 40px;
+}
+.back-home:hover{
+    background: #2980b9;
+}
