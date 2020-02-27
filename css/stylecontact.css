@@ -80,7 +80,6 @@ textarea.contact-form-text{
     border-radius: 20px;
     cursor: pointer;
     transition: 0.5s;
-    width: 40px;
 }
 .back-home:hover{
     background: #2980b9;
