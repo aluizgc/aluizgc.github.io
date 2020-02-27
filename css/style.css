@@ -67,12 +67,12 @@ body{
     top: 0;
     box-sizing: border-box;
     border-radius: 50%;
-    animation: wave 1.5s infinite linear;
+    animation: wave 3s infinite linear;
 }
 
 @keyframes wave{
     to{
-        transform: scale(1.5);
+        transform: scale(1.7);
         opacity: 0;
     }
 }
