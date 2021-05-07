@@ -189,11 +189,33 @@ img{
 }
 
 /* Active menu */
+.active-link{
+  position: relative;
+}
 
+.active-link::after{
+  content: '';
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0;
+  width: 65%;
+  height: 3px;
+  background-color: var(--first-color-light);
+}
 
 /* Change background header */
+.scroll-header{
+  background-color: var(--first-color-lighten);
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
 
+.scroll-header .nav__logo, .scroll-header .nav__toggle, .scroll-header .nav__link{
+  color: var(--first-color-dark);
+}
 
+.scroll-header .nav__menu{
+  background-color: var(--first-color-lighten);
+}
 /*===== SCROLL TOP =====*/
 
 
