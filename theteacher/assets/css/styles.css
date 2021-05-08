@@ -657,7 +657,7 @@ img{
 
 .footer__copy{
   font-size: var(--smaller-font-size);
-  color: var(--first-color-light);
+  color: var(--first-color-lighten);
 }
 /*===== MEDIA QUERIES =====*/
 @media screen and (min-width: 576px){
