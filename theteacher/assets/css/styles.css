@@ -537,6 +537,14 @@ img{
   color: var(--first-color-light);
   margin-bottom: var(--mb-2);
 }
+
+.swiper-pagination{
+  position: initial;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--first-color);
+}
 /*===== CONTACTME =====*/
 
 

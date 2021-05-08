@@ -82,7 +82,16 @@ const mySwiper = new Swiper('.testimonial__container', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
+    breakpoints:{
+        640:{
+            slidesPerView: 2,
+        },
+        1024:{
+            slidesPerView: 3,
+        }
+    }
   });
 
 /*===== GSAP ANIMATION =====*/ 
