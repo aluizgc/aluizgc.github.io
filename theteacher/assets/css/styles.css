@@ -378,6 +378,12 @@ img{
   width: 220px;
   border-radius: .5rem;
 }
+
+.about__video{
+  justify-self: center;
+  width: 500px;
+  border-radius: .5rem;
+}
 /*===== QUALIFICATION =====*/
 .qualification__container{
   row-gap: 2.5rem;
