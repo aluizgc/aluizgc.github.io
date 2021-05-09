@@ -8,12 +8,18 @@
   /*===== Colors =====*/
 
   /*--first-color: #3E0E12;*/
-  --first-color: #1e1e24;
+  --first-color: #435560;
+  --first-color-dark: #6e7c7c;
+  --text-color: #92967d;
+  --first-color-light: #c8c6a7;
+  --first-color-lighten: #FBF9F9;
+
+
+  /* --first-color: #1e1e24;
   --first-color-dark: #757780;
   --text-color: #524748;
   --first-color-light: #7B6F71;
-  --first-color-lighten: #FBF9F9;
-
+  --first-color-lighten: #FBF9F9; */
 
   /*===== Font and typography =====*/
   --body-font: 'Poppins', sans-serif;
@@ -657,7 +663,7 @@ img{
 
 .footer__copy{
   font-size: var(--smaller-font-size);
-  color: var(--first-color-lighten);
+  color: var(--first-color-light);
 }
 /*===== MEDIA QUERIES =====*/
 @media screen and (min-width: 576px){
