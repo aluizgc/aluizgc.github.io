@@ -1,5 +1,5 @@
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-const monthsFull = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+const monthsFull = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 const now = new Date();
 let contributions;
 
@@ -107,7 +107,7 @@ function monthly(year, month, posts) {
           <details class="Details-element details-reset" open>
             <summary role="button" class="btn-link f4 muted-link no-underline lh-condensed width-full">
               <span class="color-text-primary ws-normal text-left">
-                Created ${monthPosts.length} post${monthPosts.length > 1 ? 's' : ''}
+                Criado ${monthPosts.length} post${monthPosts.length > 1 ? 'agens' : ''}
               </span>
               <span class="d-inline-block float-right color-icon-secondary">
                 <span class="Details-content--open float-right">
@@ -158,9 +158,9 @@ function yearList() {
 function graph(year, posts, startDate, endDate) {
   const postsStr = posts.length === 1 ? "post" : "posts";
   if (year === now.getFullYear().toString()) {
-    document.querySelector('#posts-count').innerText = `${posts.length}  ${postsStr} in the last year`;
+    document.querySelector('#posts-count').innerText = `${posts.length}  ${postsStr} no último ano`;
   } else {
-    document.querySelector('#posts-count').innerText = `${posts.length}  ${postsStr} in ${year}`;
+    document.querySelector('#posts-count').innerText = `${posts.length}  ${postsStr} em ${year}`;
   }
 
   let html = ``;
@@ -235,16 +235,16 @@ function graph(year, posts, startDate, endDate) {
   }
   html += `
 <text text-anchor="start" class="wday" dx="-10" dy="8"
-style="display: none;">Sun</text>
-<text text-anchor="start" class="wday" dx="-10" dy="25">Mon</text>
+style="display: none;">Dom</text>
+<text text-anchor="start" class="wday" dx="-10" dy="25">Seg</text>
 <text text-anchor="start" class="wday" dx="-10" dy="32"
-style="display: none;">Tue</text>
-<text text-anchor="start" class="wday" dx="-10" dy="56">Wed</text>
+style="display: none;">Ter</text>
+<text text-anchor="start" class="wday" dx="-10" dy="56">Qua</text>
 <text text-anchor="start" class="wday" dx="-10" dy="57"
-style="display: none;">Thu</text>
-<text text-anchor="start" class="wday" dx="-10" dy="85">Fri</text>
+style="display: none;">Qui</text>
+<text text-anchor="start" class="wday" dx="-10" dy="85">Sex</text>
 <text text-anchor="start" class="wday" dx="-10" dy="81"
-style="display: none;">Sat</text>
+style="display: none;">Sáb</text>
 `;
   document.querySelector('#graph-svg').innerHTML = html;
 }
@@ -303,16 +303,16 @@ function relativeTime(dateStr) {
   const hours = Math.floor(diff / 60 / 60);
   const days = Math.floor(diff / 60 / 60 / 24);
   if (seconds < 60) {
-    return `${seconds} seconds ago`;
+    return `há ${seconds} segundos`;
   }
   if (minutes < 60) {
-    return `${minutes} minutes ago`;
+    return `há ${minutes} minutos`;
   }
   if (hours < 24) {
-    return `${hours} hours ago`;
+    return `há ${hours} horas`;
   }
   if (days < 30) {
-    return `${days} days ago`;
+    return `há ${days} dias`;
   }
   if (date.getFullYear() === now.getFullYear()) {
     return `${date.getDate()} ${months[date.getMonth()]}`;
